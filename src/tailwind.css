@@ -467,8 +467,17 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
+.flex {
+  display: flex;
+}
 .w-full {
   width: 100%;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .border-b {
   border-bottom-width: 1px;
