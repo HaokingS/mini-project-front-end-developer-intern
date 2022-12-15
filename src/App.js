@@ -12,7 +12,7 @@ import Product from './Views/Product';
 
 function App() {
   return(
-    <div className='block'>
+    <div className='relative pb-10 min-h-screen'>
       <Router>
       <Header />
       
@@ -39,8 +39,6 @@ function App() {
       <Footer />
       </Router>
       
-
-
     </div>
   );
 }
