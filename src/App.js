@@ -2,17 +2,17 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Views/Home';
 import About from './Views/About';
+import Product from './Views/Product';
 
 function App() {
   return(
-    <div>
+    <div className='block'>
       <Router>
       <Header />
       
@@ -26,6 +26,11 @@ function App() {
           <Route 
             path="/about"
             element={<About />}
+          >
+          </Route>
+          <Route 
+            path="/products/:id"
+            element={<Product />}
           >
           </Route>
         </Routes>

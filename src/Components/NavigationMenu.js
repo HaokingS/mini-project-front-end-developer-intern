@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function NavigationMenu(props){
     return(
         <div>
-            <div className='font-bold'>
+            <div className='font-bold '>
                         AppName
                     </div>
                     <ul>
@@ -24,6 +24,15 @@ function NavigationMenu(props){
                                 onClick= {props.closeMenu}
                             >
                                 About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link 
+                                to="/products/:id" 
+                                className='text-blue-500 py-3 border-t border-b block'
+                                onClick= {props.closeMenu}
+                            >
+                                Product
                             </Link>
                         </li>
                     </ul>
