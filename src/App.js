@@ -1,45 +1,35 @@
 import React from 'react';
-import HelloWorld from './Components/HelloWorld';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link
 } from "react-router-dom";
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Home from './Views/Home';
+import About from './Views/About';
 
 function App() {
   return(
     <div>
       <Router>
-      
       <Header />
-      <HelloWorld name = "Haoking"/>
-
+      
+        <div className='p-3'>
         <Routes>
-
           <Route 
             path="/" 
-            element={
-              <h1 className='font-bold text-2x1'>
-                This is the home page
-              </h1>
-            }
+            element={<Home />}
           >
           </Route>
-
           <Route 
-            path="/about" 
-            element={
-              <h1 className='font-bold text-2x1'>
-                About us
-              </h1>
-            }
+            path="/about"
+            element={<About />}
           >
           </Route>
-
         </Routes>
+        </div>
 
       <Footer />
       </Router>
